@@ -1,5 +1,5 @@
 # Path_Planning
-A novel tool using a “All Rivers” to estimates a path from one or more training trajectories. The calculated path is termed a “path” rather than a "trajectory" because it skips loops and and avoids collisions from the training set.
+A novel tool using “All Rivers” to estimates a path from one or more training trajectories. The calculated path is termed a “path” rather than a "trajectory" because it skips loops and and avoids collisions from the training set.
 
 # Description
 This project was motivated by a “Learning by Demonstration” project for industrial robots. The goal was for a robot to observe multiple attempts by humans to complete a task. Specifically, the robot would track hand trajectories, calculate an average trajectory, and then perform that task with an end effector. Originally, the approach was to calculate an average trajectory from multiple trajectory observations. However, no algorithm exists that calculates a true average, and calculating a true average trajectory in a statistically rigorous way appears unachievable. Moreover, algorithms that do calculate something approximating an average have inherent problems. For example, if two vehicles take alternative paths around an obstacle, one to the left, the other to the right, the average trajectory will take the center path, directly into the obstacle!
